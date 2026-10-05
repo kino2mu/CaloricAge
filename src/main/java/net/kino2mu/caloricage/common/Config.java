@@ -1,4 +1,4 @@
-package net.kino2mu.caloricage;
+package net.kino2mu.caloricage.common;
 
 import java.util.List;
 
