@@ -4,5 +4,9 @@
   "item.caloricage.raw_uranium": "Raw Uranium",
 
   "block.caloricage.bismuth_block": "Block of Bismuth",
-  "block.caloricage.bismuth_ore": "Bismuth Ore"
+  "block.caloricage.bismuth_ore": "Bismuth Ore",
+  "block.caloricage.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
+
+  "creativetab.caloricage.bismuth_items": "Bismuth Items",
+  "creativetab.caloricage.bismuth_blocks": "Block of Bismuth"
 }
