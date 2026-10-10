@@ -20,11 +20,11 @@ license="${mod_license}"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]]
 
-modId="caloricage"
+modId="caloricage" #mandatory
 
-displayName="CaloricAge"
+displayName="CaloricAge" #mandatory
 
-version="${mod_version}"
+version="${mod_version}" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://docs.neoforged.net/docs/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
@@ -38,9 +38,9 @@ version="${mod_version}"
 # A text field displayed in the mod UI
 #credits="" #optional
 
-authors="kino2mu"
+authors="kino2mu" #optional
 
-description='''The Heat and Tech!!!'''
+description='''The Heat and Tech!!!''' #mandatory
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
 #[[mixins]]
