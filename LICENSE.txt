@@ -1,2 +1,7 @@
-All Rights Reserved
 Copyright (c) 2026 kino2mu
+
+All Rights Reserved.
+
+No permission is granted to use, copy, modify, distribute,
+or sublicense this software without explicit written permission
+from the copyright holder.
