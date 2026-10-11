@@ -3,7 +3,7 @@ package net.kino2mu.caloricage.common;
 import net.kino2mu.caloricage.common.block.ModBlocks;
 import net.kino2mu.caloricage.common.item.ModCreativeModeTabs;
 import net.kino2mu.caloricage.common.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
+import net.kino2mu.caloricage.common.registries.CustomCreativeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -42,6 +42,7 @@ public class CaloricAge {
         NeoForge.EVENT_BUS.register(this);
 
         ModCreativeModeTabs.register(modEventBus);
+        CustomCreativeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -62,7 +63,6 @@ public class CaloricAge {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
-            event.accept(ModItems.RAW_URANIUM);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){

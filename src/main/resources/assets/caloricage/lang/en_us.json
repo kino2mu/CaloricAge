@@ -2,11 +2,15 @@
   "item.caloricage.bismuth": "Bismuth",
   "item.caloricage.raw_bismuth": "Raw Bismuth",
   "item.caloricage.raw_uranium": "Raw Uranium",
+  "item.caloricage.chisel": "Chisel",
+  "item.caloricage.raw_apatite": "Apatite",
 
   "block.caloricage.bismuth_block": "Block of Bismuth",
   "block.caloricage.bismuth_ore": "Bismuth Ore",
   "block.caloricage.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
 
   "creativetab.caloricage.bismuth_items": "Bismuth Items",
-  "creativetab.caloricage.bismuth_blocks": "Block of Bismuth"
+  "creativetab.caloricage.bismuth_blocks": "Block of Bismuth",
+  "creativetab.caloricage.tab_main": "CaloricAge",
+  "creativetab.caloricage.tab_blocks": "CaloricAge Blocks"
 }
