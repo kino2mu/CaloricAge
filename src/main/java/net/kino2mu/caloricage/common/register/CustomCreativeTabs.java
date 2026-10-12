@@ -1,4 +1,4 @@
-package net.kino2mu.caloricage.common.registries;
+package net.kino2mu.caloricage.common.register;
 
 import net.kino2mu.caloricage.common.CaloricAge;
 import net.kino2mu.caloricage.common.block.ModBlocks;

@@ -3,7 +3,7 @@ package net.kino2mu.caloricage.common;
 import net.kino2mu.caloricage.common.block.ModBlocks;
 import net.kino2mu.caloricage.common.item.ModCreativeModeTabs;
 import net.kino2mu.caloricage.common.item.ModItems;
-import net.kino2mu.caloricage.common.registries.CustomCreativeTabs;
+import net.kino2mu.caloricage.common.register.CustomCreativeTabs;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
