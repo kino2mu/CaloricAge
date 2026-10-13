@@ -13,7 +13,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class CustomCreativeTabs {
+public class CAgeCreativeTabs {
 
     public static final DeferredRegister<CreativeModeTab> CUSTOM_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CaloricAge.MODID);
@@ -21,27 +21,25 @@ public class CustomCreativeTabs {
     public static final Supplier<CreativeModeTab> CUSTOM_TAB_MAIN =
             CUSTOM_TAB.register("caloricage_tab_main",()-> CreativeModeTab.builder()
                     .title(Component.translatable("creativetab.caloricage.tab_main"))
-                    .icon(()-> new ItemStack(ModItems.RAW_URANIUM.get()))
+                    .icon(()-> new ItemStack(CAgeItems.APATITE.get()))
                     .displayItems((params, output) ->{
 
-                        output.accept(ModItems.RAW_URANIUM.get());
-                        output.accept(ModItems.RAW_APATITE.get());
-                        //output.accept(ModItems.CHISEL.get());
-                        output.accept(ModBlocks.BISMUTH_BLOCK);
+                        output.accept(CAgeItems.APATITE.get());
+                        output.accept(CAgeItems.RAW_URANIUM.get());
+
+                        output.accept(CAgeBlocks.APATITE_BLOCK.get());
+
 
                     }).build()
             );
     public static final Supplier<CreativeModeTab> CUSTOM_TAB_BLOCKS =
             CUSTOM_TAB.register("caloricage_tab_blocks",()-> CreativeModeTab.builder()
                     .title(Component.translatable("creativetab.caloricage.tab_blocks"))
-                    .icon(()-> new ItemStack(ModItems.RAW_APATITE.get()))
+                    .icon(()-> new ItemStack(CAgeItems.APATITE.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(CaloricAge.MODID, "caloricage_tab_main"))
                     .displayItems((params, output) ->{
 
-                        output.accept(ModItems.RAW_URANIUM.get());
-                        output.accept(ModItems.RAW_APATITE.get());
-                        output.accept(ModItems.CHISEL.get());
-                        //output.accept(ModBlocks.BISMUTH_BLOCK);
+                        output.accept(ModBlocks.BISMUTH_BLOCK);
 
                     }).build()
             );
@@ -49,4 +47,5 @@ public class CustomCreativeTabs {
     public static void register(IEventBus eventBus){
         CUSTOM_TAB.register(eventBus);
     }
+
 }

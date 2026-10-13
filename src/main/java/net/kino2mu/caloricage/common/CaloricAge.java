@@ -1,9 +1,10 @@
 package net.kino2mu.caloricage.common;
 
 import net.kino2mu.caloricage.common.block.ModBlocks;
-import net.kino2mu.caloricage.common.item.ModCreativeModeTabs;
 import net.kino2mu.caloricage.common.item.ModItems;
-import net.kino2mu.caloricage.common.register.CustomCreativeTabs;
+import net.kino2mu.caloricage.common.register.CAgeBlocks;
+import net.kino2mu.caloricage.common.register.CAgeCreativeTabs;
+import net.kino2mu.caloricage.common.register.CAgeItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -41,8 +42,9 @@ public class CaloricAge {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModCreativeModeTabs.register(modEventBus);
-        CustomCreativeTabs.register(modEventBus);
+        CAgeCreativeTabs.register(modEventBus);
+        CAgeItems.register(modEventBus);
+        CAgeBlocks.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -60,6 +62,7 @@ public class CaloricAge {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        /*
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
@@ -69,6 +72,7 @@ public class CaloricAge {
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
         }
+        */
 
     }
 

@@ -16,12 +16,6 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
             () -> new Item(new Item.Properties())
     );
-    public static final DeferredItem<Item> RAW_URANIUM = ITEMS.register("raw_uranium",
-            () -> new Item(new Item.Properties())
-    );
-    public static final DeferredItem<Item> RAW_APATITE = ITEMS.register("raw_apatite",
-            () -> new Item(new Item.Properties())
-    );
     public static final DeferredItem<Item> CHISEL = ITEMS.register("chisel",
             ()-> new ItemChisel(new Item.Properties().durability(32))
     );
