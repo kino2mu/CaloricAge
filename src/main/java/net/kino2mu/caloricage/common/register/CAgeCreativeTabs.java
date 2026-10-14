@@ -28,6 +28,8 @@ public class CAgeCreativeTabs {
                         output.accept(CAgeItems.RAW_URANIUM.get());
 
                         output.accept(CAgeBlocks.APATITE_BLOCK.get());
+                        output.accept(CAgeBlocks.URANIUM_ORE_STONE);
+                        output.accept(CAgeBlocks.URANIUM_ORE_DEEPSLATE);
 
 
                     }).build()

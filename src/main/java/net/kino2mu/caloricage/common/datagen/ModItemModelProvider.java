@@ -17,8 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.BISMUTH.get());
         basicItem(ModItems.RAW_BISMUTH.get());
-        //basicItem(ModItems.RAW_APATITE.get());
-        //basicItem(ModItems.RAW_URANIUM.get());
+
         basicItem(CAgeItems.APATITE.get());
         basicItem(CAgeItems.RAW_URANIUM.get());
 

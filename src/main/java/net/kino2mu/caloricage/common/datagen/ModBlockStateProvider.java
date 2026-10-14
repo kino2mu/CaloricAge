@@ -19,9 +19,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItems(ModBlocks.BISMUTH_BLOCK);
         blockWithItems(ModBlocks.BISMUTH_ORE);
         blockWithItems(ModBlocks.BISMUTH_DEEPSLATE_ORE);
-        //blockWithItems(ModBlocks.BISMUTH_BLOCK);
 
         FullBlockWithItem(CAgeBlocks.APATITE_BLOCK);
+        FullBlockWithItem(CAgeBlocks.URANIUM_ORE_STONE);
+        FullBlockWithItem(CAgeBlocks.URANIUM_ORE_DEEPSLATE);
     }
 
     private void blockWithItems(DeferredBlock<?> deferredBlock){

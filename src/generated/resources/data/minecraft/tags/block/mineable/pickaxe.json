@@ -2,6 +2,9 @@
   "values": [
     "caloricage:bismuth_block",
     "caloricage:bismuth_ore",
-    "caloricage:bismuth_deepslate_ore"
+    "caloricage:bismuth_deepslate_ore",
+    "caloricage:apatite_block",
+    "caloricage:uranium_ore_stone",
+    "caloricage:uranium_ore_deepslate"
   ]
 }
