@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1
+
+### Added
+- データ生成のコード追加
+
+### Changed
+- ModBlockLootTableProvider.javaはチュートリアルのブロックを受け付けないように変更
+
+
 ## 0.1.0
 
 ### Added
@@ -7,9 +16,6 @@
 
 ### Changed
 - リソースの一部をデータ生成へ変更
-
-### Fixed
-- を修正
 
 
 ## 0.0.3
