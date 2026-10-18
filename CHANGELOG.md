@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.1.3 =now dev=
+
+### Added
+- 熱システムの追加
+- 蓄熱ブロックの追加
+
+
+## 0.1.2
+
+### Added
+- データ生成のコードをさらに追加
+
+### Changed
+- ModItemModelProvider.javaはチュートリアルのブロックを受け付けないように変更
+- ModBlockTagProvider.javaはチュートリアルのブロックを受け付けないように変更
+- ModRecipeProvider.javaはチュートリアルのブロックを受け付けないように変更
+
+
 ## 0.1.1
 
 ### Added

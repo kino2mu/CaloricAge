@@ -1,6 +1,5 @@
 package net.kino2mu.caloricage.common.item.tool;
 
-import net.kino2mu.caloricage.common.block.ModBlocks;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -26,8 +25,7 @@ public class ItemChisel extends Item {
                     Blocks.END_STONE, Blocks.END_STONE_BRICKS,
                     Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
                     Blocks.GOLD_BLOCK, Blocks.IRON_BLOCK,
-                    Blocks.IRON_BLOCK, Blocks.GOLD_BLOCK,
-                    Blocks.NETHERRACK, ModBlocks.BISMUTH_BLOCK.get()
+                    Blocks.IRON_BLOCK, Blocks.GOLD_BLOCK
             );
 
     @Override

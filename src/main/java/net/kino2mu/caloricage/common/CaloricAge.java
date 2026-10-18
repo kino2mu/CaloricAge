@@ -1,7 +1,6 @@
 package net.kino2mu.caloricage.common;
 
-import net.kino2mu.caloricage.common.block.ModBlocks;
-import net.kino2mu.caloricage.common.item.ModItems;
+
 import net.kino2mu.caloricage.common.register.CAgeBlocks;
 import net.kino2mu.caloricage.common.register.CAgeCreativeTabs;
 import net.kino2mu.caloricage.common.register.CAgeItems;
@@ -45,10 +44,11 @@ public class CaloricAge {
         CAgeCreativeTabs.register(modEventBus);
         CAgeItems.register(modEventBus);
         CAgeBlocks.register(modEventBus);
-
+/*
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+ */
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

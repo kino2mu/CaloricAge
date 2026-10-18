@@ -19,29 +19,22 @@ public class CAgeBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(CaloricAge.MODID);
 
+
     public static final DeferredBlock<Block> APATITE_BLOCK = registerBlock("apatite_block",
             ()-> new Block(
-                    BlockBehaviour.Properties.of()
-                            .strength(4f)
-                            .requiresCorrectToolForDrops()
-                            .sound(SoundType.AMETHYST)
-            ));
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST))
+    );
 
     public static final DeferredBlock<Block> URANIUM_ORE_STONE = registerBlock("uranium_ore_stone",
             ()-> new Block(
-                    BlockBehaviour.Properties.of()
-                            .strength(2f)
-                            .requiresCorrectToolForDrops()
-                            .sound(SoundType.STONE)
-            ));
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE))
+    );
 
     public static final DeferredBlock<Block> URANIUM_ORE_DEEPSLATE = registerBlock("uranium_ore_deepslate",
             ()-> new Block(
-                    BlockBehaviour.Properties.of()
-                            .strength(2f)
-                            .requiresCorrectToolForDrops()
-                            .sound(SoundType.STONE)
-            ));
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE))
+    );
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

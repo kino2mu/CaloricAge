@@ -14,9 +14,16 @@ public class CAgeItems {
     public static final DeferredItem<Item> RAW_URANIUM = ITEMS.register("raw_uranium",
             () -> new Item(new Item.Properties())
     );
+    public static final DeferredItem<Item> URANIUM_DUST = ITEMS.register("uranium_dust",
+            ()-> new Item(new Item.Properties())
+    );
     public static final DeferredItem<Item> APATITE = ITEMS.register("apatite",
             () -> new Item(new Item.Properties())
     );
+    public static final DeferredItem<Item> APATITE_DUST = ITEMS.register("apatite_dust",
+            () -> new Item(new Item.Properties())
+    );
+
 
 
     public static void register(IEventBus eventBus){ ITEMS.register(eventBus); }

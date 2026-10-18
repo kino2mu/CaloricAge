@@ -1,7 +1,6 @@
 package net.kino2mu.caloricage.common.datagen;
 
 import net.kino2mu.caloricage.common.CaloricAge;
-import net.kino2mu.caloricage.common.block.ModBlocks;
 import net.kino2mu.caloricage.common.register.CAgeBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -21,16 +20,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.BISMUTH_BLOCK.get())
-                .add(ModBlocks.BISMUTH_ORE.get())
-                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get())
 
                 .add(CAgeBlocks.APATITE_BLOCK.get())
                 .add(CAgeBlocks.URANIUM_ORE_STONE.get())
                 .add(CAgeBlocks.URANIUM_ORE_DEEPSLATE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get());
+
+                .add(CAgeBlocks.URANIUM_ORE_STONE.get())
+                .add(CAgeBlocks.URANIUM_ORE_DEEPSLATE.get());
 
     }
 }

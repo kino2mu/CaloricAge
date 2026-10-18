@@ -1,6 +1,5 @@
 package net.kino2mu.caloricage.common.datagen;
 
-import net.kino2mu.caloricage.common.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DataMapProvider;
@@ -20,6 +19,5 @@ public class ModDataMapProvider extends DataMapProvider {
         this.builder(NeoForgeDataMaps.FURNACE_FUELS)
                 .add(ModItems.RAW_URANIUM.getId(), new FurnaceFuel(1200), false);
     }
-
 */
 }

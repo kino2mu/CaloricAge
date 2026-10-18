@@ -1,14 +1,16 @@
 {
   "item.caloricage.bismuth": "Bismuth",
   "item.caloricage.raw_bismuth": "Raw Bismuth",
-  "item.caloricage.raw_uranium": "Raw Uranium",
   "item.caloricage.chisel": "Chisel",
   "item.caloricage.apatite": "Apatite",
+  "item.caloricage.apatite_dust": "Apatite Dust",
+  "item.caloricage.raw_uranium": "Raw Uranium",
+  "item.caloricage.uranium_dust": "Uranium Dust",
 
-  "block.caloricage.bismuth_block": "Block of Bismuth",
-  "block.caloricage.bismuth_ore": "Bismuth Ore",
-  "block.caloricage.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
+
   "block.caloricage.apatite_block": "Block of Apatite",
+  "block.caloricage.uranium_ore_stone": "Uranium Ore",
+  "block.caloricage.uranium_ore_deepslate": "Deepslate Uranium Ore",
 
   "creativetab.caloricage.bismuth_items": "Bismuth Items",
   "creativetab.caloricage.bismuth_blocks": "Block of Bismuth",

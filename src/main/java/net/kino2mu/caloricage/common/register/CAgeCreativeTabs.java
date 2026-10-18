@@ -1,8 +1,6 @@
 package net.kino2mu.caloricage.common.register;
 
 import net.kino2mu.caloricage.common.CaloricAge;
-import net.kino2mu.caloricage.common.block.ModBlocks;
-import net.kino2mu.caloricage.common.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -25,11 +23,11 @@ public class CAgeCreativeTabs {
                     .displayItems((params, output) ->{
 
                         output.accept(CAgeItems.APATITE.get());
+                        output.accept(CAgeItems.APATITE_DUST.get());
                         output.accept(CAgeItems.RAW_URANIUM.get());
+                        output.accept(CAgeItems.URANIUM_DUST.get());
 
                         output.accept(CAgeBlocks.APATITE_BLOCK.get());
-                        output.accept(CAgeBlocks.URANIUM_ORE_STONE);
-                        output.accept(CAgeBlocks.URANIUM_ORE_DEEPSLATE);
 
 
                     }).build()
@@ -41,7 +39,8 @@ public class CAgeCreativeTabs {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(CaloricAge.MODID, "caloricage_tab_main"))
                     .displayItems((params, output) ->{
 
-                        output.accept(ModBlocks.BISMUTH_BLOCK);
+                        output.accept(CAgeBlocks.URANIUM_ORE_STONE);
+                        output.accept(CAgeBlocks.URANIUM_ORE_DEEPSLATE);
 
                     }).build()
             );

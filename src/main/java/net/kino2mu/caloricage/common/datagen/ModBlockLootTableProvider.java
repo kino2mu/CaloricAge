@@ -1,14 +1,13 @@
 package net.kino2mu.caloricage.common.datagen;
 
-import net.kino2mu.caloricage.common.block.ModBlocks;
-import net.kino2mu.caloricage.common.item.ModItems;
+
 import net.kino2mu.caloricage.common.register.CAgeBlocks;
 import net.kino2mu.caloricage.common.register.CAgeItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
-//import net.minecraft.world.flag.FeatureFlag;
+import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
