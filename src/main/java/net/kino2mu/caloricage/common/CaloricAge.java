@@ -44,11 +44,7 @@ public class CaloricAge {
         CAgeCreativeTabs.register(modEventBus);
         CAgeItems.register(modEventBus);
         CAgeBlocks.register(modEventBus);
-/*
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
 
- */
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

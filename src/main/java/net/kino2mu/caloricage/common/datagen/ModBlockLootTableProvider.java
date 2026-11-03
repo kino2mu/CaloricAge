@@ -30,18 +30,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-/*
-        dropSelf(ModBlocks.BISMUTH_BLOCK.get());
 
-        add(ModBlocks.BISMUTH_ORE.get(),
-                block -> createOreDrop(ModBlocks.BISMUTH_ORE.get(), ModItems.BISMUTH.get())
-        );
-        add(ModBlocks.BISMUTH_DEEPSLATE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.BISMUTH_ORE.get(), ModItems.BISMUTH.get(), 2, 5)
-        );
-
- */
         dropSelf(CAgeBlocks.APATITE_BLOCK.get());
+
+        dropSelf(CAgeBlocks.MAGIC_BLOCK.get());
+
 
         add(CAgeBlocks.URANIUM_ORE_STONE.get(),
                 block -> createMultipleOreDrops(
@@ -56,6 +49,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                         CAgeItems.RAW_URANIUM.get(),
                         1, 3)
         );
+
+        dropSelf(CAgeBlocks.CONCRETE_REFRACTORY.get());
+        dropSelf(CAgeBlocks.CONCRETE_REFRACTORY_STAIRS.get());
+        //dropSelf(CAgeBlocks.CONCRETE_REFRACTORY_SLAB.get());
+        add(CAgeBlocks.CONCRETE_REFRACTORY_SLAB.get(),
+                block -> createSlabItemTable(CAgeBlocks.CONCRETE_REFRACTORY_SLAB.get()));
+        dropSelf(CAgeBlocks.CONCRETE_REFRACTORY_WALL.get());
+        dropSelf(CAgeBlocks.CONCRETE_REFRACTORY_FENCE.get());
+        dropSelf(CAgeBlocks.CONCRETE_REFRACTORY_FENCEGATE.get());
+
+        dropSelf(CAgeBlocks.THERMOREACTIVE_LAMP.get());
 
     }
 
@@ -74,4 +78,5 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         return CAgeBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
     }
     //Memo:「CAgeBlocksにより、このMODで登録されているブロック一覧はこちらです」と返す部分
+
 }

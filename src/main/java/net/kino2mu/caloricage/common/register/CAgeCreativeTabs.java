@@ -24,10 +24,22 @@ public class CAgeCreativeTabs {
 
                         output.accept(CAgeItems.APATITE.get());
                         output.accept(CAgeItems.APATITE_DUST.get());
+                        output.accept(CAgeBlocks.APATITE_BLOCK.get());
+
                         output.accept(CAgeItems.RAW_URANIUM.get());
                         output.accept(CAgeItems.URANIUM_DUST.get());
 
-                        output.accept(CAgeBlocks.APATITE_BLOCK.get());
+                        output.accept(CAgeItems.CRIMSONITE_INGOT.get());
+
+                        //output.accept(CAgeItems.NEO_HAMMER.get());
+
+                        output.accept(CAgeBlocks.MAGIC_BLOCK.get());
+
+                        //output.accept(CAgeItems.PHLOGISTON_FOOD.get());
+
+                        output.accept(CAgeItems.CALORIC.get());
+                        output.accept(CAgeItems.CALORIC_SWEET.get());
+
 
 
                     }).build()
@@ -39,8 +51,17 @@ public class CAgeCreativeTabs {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(CaloricAge.MODID, "caloricage_tab_main"))
                     .displayItems((params, output) ->{
 
-                        output.accept(CAgeBlocks.URANIUM_ORE_STONE);
-                        output.accept(CAgeBlocks.URANIUM_ORE_DEEPSLATE);
+                        output.accept(CAgeBlocks.URANIUM_ORE_STONE.get());
+                        output.accept(CAgeBlocks.URANIUM_ORE_DEEPSLATE.get());
+
+                        output.accept(CAgeBlocks.CONCRETE_REFRACTORY.get());
+                        output.accept(CAgeBlocks.CONCRETE_REFRACTORY_SLAB.get());
+                        output.accept(CAgeBlocks.CONCRETE_REFRACTORY_STAIRS.get());
+                        output.accept(CAgeBlocks.CONCRETE_REFRACTORY_WALL.get());
+                        output.accept(CAgeBlocks.CONCRETE_REFRACTORY_FENCE.get());
+                        output.accept(CAgeBlocks.CONCRETE_REFRACTORY_FENCEGATE.get());
+
+                        output.accept(CAgeBlocks.THERMOREACTIVE_LAMP.get());
 
                     }).build()
             );

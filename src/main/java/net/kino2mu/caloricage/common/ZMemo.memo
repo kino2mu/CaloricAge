@@ -1,0 +1,255 @@
+--------------------------------------------------------------------
+        This is Memo
+--------------------------------------------------------------------
+        以下は
+        public abstract class BlockBehaviour implements FeatureElement {}
+        というMinecraft本体コードにあるabstract classの中にある
+
+        public static class Properties{}
+        の中身の一部です。
+
+        public Properties mapColor(DyeColor mapColor) {
+            this.mapColor = (p_284892_) -> mapColor.getMapColor();
+            return this;
+        }
+
+        public Properties mapColor(MapColor mapColor) {
+            this.mapColor = (p_222988_) -> mapColor;
+            return this;
+        }
+
+        public Properties mapColor(Function<BlockState, MapColor> mapColor) {
+            this.mapColor = mapColor;
+            return this;
+        }
+
+
+        public Properties noCollission() {
+            this.hasCollision = false;
+            this.canOcclude = false;
+            return this;
+        }
+        ↑これで当たり判定の消去をする。ついでに正方形として扱われなくなる。
+
+        public Properties noOcclusion() {
+            this.canOcclude = false;
+            return this;
+        }
+        ↑これで正方形のブロックとして扱われなくなる。
+
+        public Properties friction(float friction) {
+            this.friction = friction;
+            return this;
+        }
+
+        public Properties speedFactor(float speedFactor) {
+            this.speedFactor = speedFactor;
+            return this;
+        }
+
+        public Properties jumpFactor(float jumpFactor) {
+            this.jumpFactor = jumpFactor;
+            return this;
+        }
+
+        public Properties sound(SoundType soundType) {
+            this.soundType = soundType;
+            return this;
+        }
+
+        public Properties lightLevel(ToIntFunction<BlockState> lightEmission) {
+            this.lightEmission = lightEmission;
+            return this;
+        }
+
+        public Properties strength(float destroyTime, float explosionResistance) {
+            return this.destroyTime(destroyTime).explosionResistance(explosionResistance);
+        }
+
+        public Properties instabreak() {
+            return this.strength(0.0F);
+        }
+
+        public Properties strength(float strength) {
+            this.strength(strength, strength);
+            return this;
+        }
+
+        public Properties randomTicks() {
+            this.isRandomlyTicking = true;
+            return this;
+        }
+
+        public Properties dynamicShape() {
+            this.dynamicShape = true;
+            return this;
+        }
+
+        public Properties noLootTable() {
+            this.drops = BuiltInLootTables.EMPTY;
+            return this;
+        }
+
+        @Deprecated
+        public BlockBehaviour.Properties dropsLike(Block block) {
+            this.lootTableSupplier = () -> block.getLootTable();
+            return this;
+        }
+
+        public BlockBehaviour.Properties lootFrom(Supplier<? extends Block> blockIn) {
+            this.lootTableSupplier = () -> ((Block)blockIn.get()).getLootTable();
+            return this;
+        }
+
+        public BlockBehaviour.Properties ignitedByLava() {
+            this.ignitedByLava = true;
+            return this;
+        }
+        ↑これで溶岩から引火しなくなる
+
+        public BlockBehaviour.Properties liquid() {
+            this.liquid = true;
+            return this;
+        }
+
+        public BlockBehaviour.Properties forceSolidOn() {
+            this.forceSolidOn = true;
+            return this;
+        }
+
+        @Deprecated
+        public BlockBehaviour.Properties forceSolidOff() {
+            this.forceSolidOff = true;
+            return this;
+        }
+
+        public BlockBehaviour.Properties pushReaction(PushReaction pushReaction) {
+            this.pushReaction = pushReaction;
+            return this;
+        }
+
+        public BlockBehaviour.Properties air() {
+            this.isAir = true;
+            return this;
+        }
+
+        public BlockBehaviour.Properties isValidSpawn(BlockBehaviour.StateArgumentPredicate<EntityType<?>> isValidSpawn) {
+            this.isValidSpawn = isValidSpawn;
+            return this;
+        }
+        ↑これでモブのスポーン設定をする。EntityTypeを指定するので、特定のMobだけをわかせることもできる。
+        デフォでは、フルブロックではないブロックおよびガラスブロックは完全にわかないらしい。
+
+        public BlockBehaviour.Properties isRedstoneConductor(BlockBehaviour.StatePredicate isRedstoneConductor) {
+            this.isRedstoneConductor = isRedstoneConductor;
+            return this;
+        }
+        ↑これでレッドストーンにおける導体ブロックと非導体ブロック、つまり、透過ブロックと不透過ブロックを設定できる。
+
+        public BlockBehaviour.Properties isSuffocating(BlockBehaviour.StatePredicate isSuffocating) {
+            this.isSuffocating = isSuffocating;
+            return this;
+        }
+        ↑これで窒息するかどうか決められる。
+        デフォでは、フルブロックでないブロックおよび、ガラスブロックは窒息しないらしい。
+
+        public BlockBehaviour.Properties isViewBlocking(BlockBehaviour.StatePredicate isViewBlocking) {
+            this.isViewBlocking = isViewBlocking;
+            return this;
+        }
+        ↑これでMobの視線判定を設定できる。視線を切られたMobのAIは、追いかけるのをやめるようになる。
+
+        public BlockBehaviour.Properties hasPostProcess(BlockBehaviour.StatePredicate hasPostProcess) {
+            this.hasPostProcess = hasPostProcess;
+            return this;
+        }
+        ↑これでブロックの設置時や描画・チャンク更新などの処理中（ポストプロセス）に追加の処理を行うべきかどうかを設定する。
+        デフォでは、マグマブロックの見た目を変化する処理に使われているらしい。
+
+        public BlockBehaviour.Properties emissiveRendering(BlockBehaviour.StatePredicate emissiveRendering) {
+            this.emissiveRendering = emissiveRendering;
+            return this;
+        }
+        ↑これでブロックのテクスチャを周囲の明るさに関係なく常に最大輝度で描画する。lightEmission と違い、見た目だけ明るくする。
+        デフォでは、マグマブロックやホタルの描画、lightEmissionと併用してマグマの描画に使われるらしい。
+
+
+        public BlockBehaviour.Properties requiresCorrectToolForDrops() {
+            this.requiresCorrectToolForDrops = true;
+            return this;
+        }
+        ↑正しいツールで採掘した場合のみアイテムをドロップする。よく使われる。
+
+        public BlockBehaviour.Properties destroyTime(float destroyTime) {
+            this.destroyTime = destroyTime;
+            return this;
+        }
+        ↑これでブロックは硬さではなく採掘した時間で壊れるようになる。あんまり使われない。
+
+        public BlockBehaviour.Properties explosionResistance(float explosionResistance) {
+            this.explosionResistance = Math.max(0.0F, explosionResistance);
+            return this;
+        }
+        ↑これで爆発耐性を設定する。
+        strengthでも設定できるが、explosionResistanceって書いてある方が後から見たときにわかりやすいかも。多分ね。
+
+        public BlockBehaviour.Properties offsetType(BlockBehaviour.OffsetType offsetType) {
+            BlockBehaviour.OffsetFunction var10001;
+            switch (offsetType.ordinal()) {
+                case 0 -> var10001 = null;
+                case 1 -> var10001 = (p_272565_, p_272566_, p_272567_) -> {
+                    Block block = p_272565_.getBlock();
+                    long i = Mth.getSeed(p_272567_.getX(), 0, p_272567_.getZ());
+                    float f = block.getMaxHorizontalOffset();
+                    double d0 = Mth.clamp(((double)((float)(i & 15L) / 15.0F) - (double)0.5F) * (double)0.5F, (double)(-f), (double)f);
+                    double d1 = Mth.clamp(((double)((float)(i >> 8 & 15L) / 15.0F) - (double)0.5F) * (double)0.5F, (double)(-f), (double)f);
+                    return new Vec3(d0, (double)0.0F, d1);
+                };
+                case 2 -> var10001 = (p_272562_, p_272563_, p_272564_) -> {
+                    Block block = p_272562_.getBlock();
+                    long i = Mth.getSeed(p_272564_.getX(), 0, p_272564_.getZ());
+                    double d0 = ((double)((float)(i >> 4 & 15L) / 15.0F) - (double)1.0F) * (double)block.getMaxVerticalOffset();
+                    float f = block.getMaxHorizontalOffset();
+                    double d1 = Mth.clamp(((double)((float)(i & 15L) / 15.0F) - (double)0.5F) * (double)0.5F, (double)(-f), (double)f);
+                    double d2 = Mth.clamp(((double)((float)(i >> 8 & 15L) / 15.0F) - (double)0.5F) * (double)0.5F, (double)(-f), (double)f);
+                    return new Vec3(d1, d0, d2);
+                };
+                default -> throw new MatchException((String)null, (Throwable)null);
+            }
+
+            this.offsetFunction = var10001;
+            return this;
+        }
+        ↑これでブロックの見た目や当たり判定を、ワールド座標に基づいてズラす（オフセットする）挙動を設定する。
+        デフォでは、草、背の高い草、花に使われているらしい。
+        case0はずらさない、case1はxz軸だけ、case2はxyz軸で、それぞれずらすと思われる。
+
+        public BlockBehaviour.Properties noTerrainParticles() {
+            this.spawnTerrainParticles = false;
+            return this;
+        }
+        ↑これでブロックを壊したときや歩いたときに発生する地形パーティクル（破片やエフェクト）のスポーンを無効化する
+
+        public BlockBehaviour.Properties requiredFeatures(FeatureFlag... requiredFeatures) {
+            this.requiredFeatures = FeatureFlags.REGISTRY.subset(requiredFeatures);
+            return this;
+        }
+        ↑これでブロックを、特定のフラグがオンのときのみゲーム内に読み込ませる。
+        デフォでは、実験的機能のオプションに使われているらしい。
+
+        public BlockBehaviour.Properties instrument(NoteBlockInstrument instrument) {
+            this.instrument = instrument;
+            return this;
+        }
+        ↑これで音符ブロックの下にある時、音符ブロックの楽器の種類を指定できる。
+
+        public BlockBehaviour.Properties replaceable() {
+            this.replaceable = true;
+            return this;
+        }
+        ↑これで別のブロックが置かれた際に上書きされるようになる。砂などの落下するブロックが落ちてきたときも上書きされる。
+        デフォでは、草、背の高い草、花、雪の層、スイレンの葉、海草などに使われているらしい。
+
+
+         */
+}

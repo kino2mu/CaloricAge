@@ -1,19 +1,32 @@
 {
-  "item.caloricage.bismuth": "Bismuth",
-  "item.caloricage.raw_bismuth": "Raw Bismuth",
-  "item.caloricage.chisel": "Chisel",
+  "creativetab.caloricage.tab_main": "CaloricAge",
+  "creativetab.caloricage.tab_blocks": "CaloricAge Blocks",
+
   "item.caloricage.apatite": "Apatite",
   "item.caloricage.apatite_dust": "Apatite Dust",
   "item.caloricage.raw_uranium": "Raw Uranium",
   "item.caloricage.uranium_dust": "Uranium Dust",
+  "item.caloricage.crimsonite_ingot": "Crimsonite Ingot",
+
+  "item.caloricage.phlogiston_food": "Hot Hot Food",
+
+  "item.caloricage.caloric": "Caloric",
+  "item.caloricage.caloric_sweet": "Hot Sweets",
 
 
   "block.caloricage.apatite_block": "Block of Apatite",
   "block.caloricage.uranium_ore_stone": "Uranium Ore",
   "block.caloricage.uranium_ore_deepslate": "Deepslate Uranium Ore",
+  "block.caloricage.magic_block": "Magic Block",
+  "block.caloricage.concrete_refractory": "Refractory Concrete",
+  "block.caloricage.concrete_refractory_slab": "Refractory Concrete Slab",
+  "block.caloricage.concrete_refractory_stairs": "Refractory Concrete Stair",
+  "block.caloricage.concrete_refractory_wall": "Refractory Concrete Wall",
+  "block.caloricage.concrete_refractory_fence": "Refractory Concrete Fence",
+  "block.caloricage.concrete_refractory_fencegate": "Refractory Concrete FenceGate",
 
-  "creativetab.caloricage.bismuth_items": "Bismuth Items",
-  "creativetab.caloricage.bismuth_blocks": "Block of Bismuth",
-  "creativetab.caloricage.tab_main": "CaloricAge",
-  "creativetab.caloricage.tab_blocks": "CaloricAge Blocks"
+
+  "tooltip.caloricage.magicblock.tooltip": "This is §9MAGICAL§r!!!",
+  "tooltip.caloricage.CALORIC.tooltip": "Super super hot"
+
 }
