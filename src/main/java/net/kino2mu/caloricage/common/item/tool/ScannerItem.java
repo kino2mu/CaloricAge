@@ -38,7 +38,7 @@ public class ScannerItem extends Item {
                         BlockPos pos = blockHit.getBlockPos();
                         stack.set(CAgeDataComponents.COORDINATES.get(), pos);
                         player.sendSystemMessage(Component.translatable("item.caloricage.scanner.message.save"));
-                        level.playSound(null, player.blockPosition(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS);
+                        level.playSound(null, player.blockPosition(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS,0.5f,1);
                     }
                 }
                 else {
