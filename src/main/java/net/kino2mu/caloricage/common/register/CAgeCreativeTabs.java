@@ -31,6 +31,12 @@ public class CAgeCreativeTabs {
 
                         output.accept(CAgeItems.CRIMSONITE_INGOT.get());
 
+                        output.accept(CAgeItems.CRIMSONITE_SWORD);
+                        output.accept(CAgeItems.CRIMSONITE_PICKAXE);
+                        output.accept(CAgeItems.CRIMSONITE_SHOVEL);
+                        output.accept(CAgeItems.CRIMSONITE_AXE);
+                        output.accept(CAgeItems.CRIMSONITE_HOE);
+
                         //output.accept(CAgeItems.NEO_HAMMER.get());
 
                         output.accept(CAgeBlocks.MAGIC_BLOCK.get());
@@ -40,6 +46,7 @@ public class CAgeCreativeTabs {
                         output.accept(CAgeItems.CALORIC.get());
                         output.accept(CAgeItems.CALORIC_SWEET.get());
 
+                        output.accept(CAgeItems.TEST_SCANNER);
 
 
                     }).build()

@@ -1,4 +1,4 @@
-package net.kino2mu.caloricage.common.register;
+package net.kino2mu.caloricage.common.data;
 
 import net.kino2mu.caloricage.common.CaloricAge;
 import net.minecraft.resources.ResourceLocation;
@@ -14,6 +14,11 @@ public class CAgeTags {
 
         public static final TagKey<Block> LOW_HEAT_BLOCK = createTag("low_heat_block");
         public static final TagKey<Block> HIGH_HEAT_BLOCK = createTag("high_heat_block");
+
+        public static final TagKey<Block> CRIMSONITE_BREAK = createTag("crimsonite_break");
+        public static final TagKey<Block> CRIMSONITE_NOT_BREAK = createTag("crimsonite_not_break");
+
+        public static final TagKey<Block> DRILL_MINEABLE = createTag("drill_mineable");
 
         private static TagKey<Block> createTag(String name){
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CaloricAge.MODID, name));

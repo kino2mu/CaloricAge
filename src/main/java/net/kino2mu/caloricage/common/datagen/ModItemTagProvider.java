@@ -2,7 +2,7 @@ package net.kino2mu.caloricage.common.datagen;
 
 import net.kino2mu.caloricage.common.CaloricAge;
 import net.kino2mu.caloricage.common.register.CAgeItems;
-import net.kino2mu.caloricage.common.register.CAgeTags;
+import net.kino2mu.caloricage.common.data.CAgeTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;

@@ -3,8 +3,8 @@ package net.kino2mu.caloricage.common;
 
 import net.kino2mu.caloricage.common.register.CAgeBlocks;
 import net.kino2mu.caloricage.common.register.CAgeCreativeTabs;
+import net.kino2mu.caloricage.common.data.CAgeDataComponents;
 import net.kino2mu.caloricage.common.register.CAgeItems;
-import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -44,6 +44,7 @@ public class CaloricAge {
         CAgeCreativeTabs.register(modEventBus);
         CAgeItems.register(modEventBus);
         CAgeBlocks.register(modEventBus);
+        CAgeDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

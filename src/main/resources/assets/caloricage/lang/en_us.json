@@ -8,10 +8,19 @@
   "item.caloricage.uranium_dust": "Uranium Dust",
   "item.caloricage.crimsonite_ingot": "Crimsonite Ingot",
 
-  "item.caloricage.phlogiston_food": "Hot Hot Food",
+  "item.caloricage.crimsonite_sword": "Crimsonite Sword",
+  "item.caloricage.crimsonite_pickaxe": "Crimsonite Pickaxe",
+  "item.caloricage.crimsonite_shovel": "Crimsonite Shovel",
+  "item.caloricage.crimsonite_axe": "Crimsonite Axe",
+  "item.caloricage.crimsonite_hoe": "Crimsonite Hoe",
 
   "item.caloricage.caloric": "Caloric",
   "item.caloricage.caloric_sweet": "Hot Sweets",
+
+  "item.caloricage.scanner": "Scanner",
+  "item.caloricage.scanner.message.save": "Position was saved",
+  "item.caloricage.scanner.message.position": "The position is X:%s Y:%s Z:%s",
+  "item.caloricage.scanner.message.delete": "Position was deleted",
 
 
   "block.caloricage.apatite_block": "Block of Apatite",
@@ -27,6 +36,7 @@
 
 
   "tooltip.caloricage.magicblock.tooltip": "This is §9MAGICAL§r!!!",
-  "tooltip.caloricage.CALORIC.tooltip": "Super super hot"
+  "tooltip.caloricage.hold_shift": "Press to [Shift]",
+  "tooltip.caloricage.caloric.tooltip": "Super Super Hot!!!"
 
 }

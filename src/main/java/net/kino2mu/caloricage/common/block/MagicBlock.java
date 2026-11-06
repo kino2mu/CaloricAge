@@ -1,7 +1,6 @@
 package net.kino2mu.caloricage.common.block;
 
-import net.kino2mu.caloricage.common.register.CAgeItems;
-import net.kino2mu.caloricage.common.register.CAgeTags;
+import net.kino2mu.caloricage.common.data.CAgeTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;

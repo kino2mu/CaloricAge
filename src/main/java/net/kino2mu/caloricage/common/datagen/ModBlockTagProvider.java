@@ -2,7 +2,7 @@ package net.kino2mu.caloricage.common.datagen;
 
 import net.kino2mu.caloricage.common.CaloricAge;
 import net.kino2mu.caloricage.common.register.CAgeBlocks;
-import net.kino2mu.caloricage.common.register.CAgeTags;
+import net.kino2mu.caloricage.common.data.CAgeTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -40,23 +40,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         ;
         //↑セミコロン忘れずに
 
-        tag(BlockTags.FENCES)
-                .add(CAgeBlocks.CONCRETE_REFRACTORY_FENCE.get())
-        ;
-        tag(BlockTags.FENCE_GATES)
-                .add(CAgeBlocks.CONCRETE_REFRACTORY_FENCEGATE.get())
-        ;
-        tag(BlockTags.WALLS)
-                .add(CAgeBlocks.CONCRETE_REFRACTORY_WALL.get())
-        ;
-        //↑セミコロン忘れずに
+        tag(BlockTags.FENCES).add(CAgeBlocks.CONCRETE_REFRACTORY_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(CAgeBlocks.CONCRETE_REFRACTORY_FENCEGATE.get());
+        tag(BlockTags.WALLS).add(CAgeBlocks.CONCRETE_REFRACTORY_WALL.get());
 
         tag(CAgeTags.Blocks.LOW_HEAT_BLOCK)
                 .add(Blocks.CAMPFIRE)
                 .add(Blocks.SOUL_CAMPFIRE)
         ;
-        //↑セミコロン忘れずに
-
         tag(CAgeTags.Blocks.HIGH_HEAT_BLOCK)
                 .add(Blocks.MAGMA_BLOCK)
         ;

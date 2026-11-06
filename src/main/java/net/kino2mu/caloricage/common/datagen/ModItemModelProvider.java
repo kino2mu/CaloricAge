@@ -5,6 +5,7 @@ import net.kino2mu.caloricage.common.register.CAgeBlocks;
 import net.kino2mu.caloricage.common.register.CAgeItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -23,19 +24,23 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(CAgeItems.APATITE.get());
         basicItem(CAgeItems.APATITE_DUST.get());
-
         basicItem(CAgeItems.RAW_URANIUM.get());
         basicItem(CAgeItems.URANIUM_DUST.get());
-
         basicItem(CAgeItems.CRIMSONITE_INGOT.get());
-
-        basicItem(CAgeItems.PHLOGISTON_FOOD.get());
 
         basicItem(CAgeItems.CALORIC.get());
         basicItem(CAgeItems.CALORIC_SWEET.get());
 
         wallItem(CAgeBlocks.CONCRETE_REFRACTORY_WALL, CAgeBlocks.CONCRETE_REFRACTORY);
         fenceItem(CAgeBlocks.CONCRETE_REFRACTORY_FENCE, CAgeBlocks.CONCRETE_REFRACTORY);
+
+        basicItem(CAgeItems.TEST_SCANNER.get());
+
+        handheldItem(CAgeItems.CRIMSONITE_SWORD.get());
+        handheldItem(CAgeItems.CRIMSONITE_PICKAXE.get());
+        handheldItem(CAgeItems.CRIMSONITE_SHOVEL.get());
+        handheldItem(CAgeItems.CRIMSONITE_AXE.get());
+        handheldItem(CAgeItems.CRIMSONITE_HOE.get());
 
     }
 
@@ -50,5 +55,4 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .texture("wall",  ResourceLocation.fromNamespaceAndPath(CaloricAge.MODID,
                         "block/" + baseBlock.getId().getPath()));
     }
-
 }
